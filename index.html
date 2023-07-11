@@ -13,22 +13,46 @@
     />
 
     <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="main.js"></script>
   </head>
   <body>
-    <!-- Day
-  DD
+    <section class="card">
+      <div class="card__input">
+        <form class="form">
+          <div class="form__field">
+            <label for="#day"> DAY </label>
 
-  Month
-  MM
+            <input type="number" id="day" placeholder="DD" />
+          </div>
 
-  Year
-  YYYY
+          <div class="form__field">
+            <label for="#month"> MONTH </label>
 
-  -- years
-  -- months
-  -- days -->
+            <input type="number" id="month" placeholder="MM" />
+          </div>
 
-    <div id="app"></div>
-    <script type="module" src="main.js"></script>
+          <div class="form__field">
+            <label for="#year"> YEAR </label>
+
+            <input type="number" id="year" placeholder="YYYY" />
+          </div>
+
+          <div class="form__submit">
+            <div class="line"></div>
+            <button type="submit" class="btn__submit">
+              <img src="./assets/images/icon-arrow.svg" alt="Arrow Icon" />
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card__output">
+        <p class="card__output-text"><span> - - </span> years</p>
+        <p class="card__output-text"><span> - - </span> months</p>
+        <p class="card__output-text"><span> - - </span> days</p>
+      </div>
+    </section>
   </body>
 </html>
